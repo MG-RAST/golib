@@ -31,6 +31,9 @@ func makeContext(request *http.Request, responseWriter http.ResponseWriter, path
 	// set the parameters
 	context.Request = request
 	context.ResponseWriter = responseWriter
+
+	// set connection to close when done
+	context.ResponseWriter.Header().Set("Connection", "close")
 	context.PathParams = pathParams
 
 	// note the format
