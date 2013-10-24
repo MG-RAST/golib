@@ -1,0 +1,31 @@
+# git ignore file 
+
+# ignore all generated files
+common
+common/**/*
+
+# ignore files with # and ~
+*\#*
+*\~*
+
+# go build files
+*.o
+*.a 
+*.[568vq]
+[568vq].out  
+_test 
+_testmain.go 
+test.out 
+build.out
+_obj
+.project
+
+# bin 
+pkg
+bin
+
+# os x files
+*.DS_Store
+
+# Thumbnails
+._*
