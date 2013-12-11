@@ -24,6 +24,11 @@ type RestOptions interface {
 	Options(c *Context)
 }
 
+// Handler method to create a new item with an ID
+type RestCreatorWithId interface {
+	CreateWithId(id string, c *Context)
+}
+
 // Handler method to create a new item
 type RestCreator interface {
 	Create(c *Context)

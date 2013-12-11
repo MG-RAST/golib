@@ -95,6 +95,12 @@ func (manager *RouteManager) MapRest(pathPrefix string, controller RestControlle
 			rc.DeleteMany(c)
 		}, DeleteMethod)
 	}
+	// CREATE /resource/{id}
+	if rc, ok := controller.(RestCreatorWithId); ok {
+		manager.MapFunc(pathPrefixWithId, func(c *Context) {
+			rc.CreateWithId(c.PathParams["id"], c)
+		}, PostMethod)
+	}
 	// CREATE /resource
 	if rc, ok := controller.(RestCreator); ok {
 		manager.MapFunc(pathPrefix, func(c *Context) {
