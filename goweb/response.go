@@ -34,9 +34,9 @@ func makeContext(request *http.Request, responseWriter http.ResponseWriter, path
 
 	// set connection to close when done
 	context.ResponseWriter.Header().Set("Connection", "close")
-	context.ResponseWriter.Header().Set("Access-Control-Allow-Headers", "Datatoken")
-	context.ResponseWriter.Header().Set("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE, OPTIONS")
 	context.ResponseWriter.Header().Set("Access-Control-Allow-Origin", "*")
+	context.ResponseWriter.Header().Set("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE, OPTIONS")
+	context.ResponseWriter.Header().Set("Access-Control-Allow-Headers", "Datatoken")
 	context.PathParams = pathParams
 
 	// note the format

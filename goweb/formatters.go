@@ -90,10 +90,11 @@ func (f *JsonFormatter) Format(cx *Context, input interface{}) ([]uint8, error) 
 
 	} else {
 		// normal json content type 
+		cx.ResponseWriter.Header().Set("Connection", "close")
 		cx.ResponseWriter.Header().Set("Content-Type", "application/json")
 		cx.ResponseWriter.Header().Set("Access-Control-Allow-Origin", "*")
 		cx.ResponseWriter.Header().Set("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE, OPTIONS")
-		cx.ResponseWriter.Header().Set("Access-Control-Allow-Headers", "Authorization")
+		cx.ResponseWriter.Header().Set("Access-Control-Allow-Headers", "Datatoken")
 	}
 
 	return output, nil
