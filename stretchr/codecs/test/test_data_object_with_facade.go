@@ -1,7 +1,7 @@
 package test
 
 import (
-	"github.com/stretchr/testify/mock"
+	"github.com/MG-RAST/golib/stretchr/testify/mock"
 )
 
 // TestObjectWithFacade is a mock test object that implements the Facade interface.

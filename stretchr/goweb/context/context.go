@@ -1,9 +1,9 @@
 package context
 
 import (
-	codecsservices "github.com/stretchr/codecs/services"
-	"github.com/stretchr/goweb/paths"
-	"github.com/stretchr/objx"
+	codecsservices "github.com/MG-RAST/golib/stretchr/codecs/services"
+	"github.com/MG-RAST/golib/stretchr/goweb/paths"
+	"github.com/MG-RAST/golib/stretchr/objx"
 	"net/http"
 )
 

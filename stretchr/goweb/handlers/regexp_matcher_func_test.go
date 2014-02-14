@@ -1,9 +1,9 @@
 package handlers
 
 import (
-	"github.com/stretchr/goweb/context"
-	context_test "github.com/stretchr/goweb/webcontext/test"
-	"github.com/stretchr/testify/assert"
+	"github.com/MG-RAST/golib/stretchr/goweb/context"
+	context_test "github.com/MG-RAST/golib/stretchr/goweb/webcontext/test"
+	"github.com/MG-RAST/golib/stretchr/testify/assert"
 	"testing"
 )
 

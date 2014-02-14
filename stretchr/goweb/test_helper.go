@@ -3,9 +3,9 @@
 package goweb
 
 import (
-	"github.com/stretchr/goweb/handlers"
-	"github.com/stretchr/testify/assert"
-	testifyhttp "github.com/stretchr/testify/http"
+	"github.com/MG-RAST/golib/stretchr/goweb/handlers"
+	"github.com/MG-RAST/golib/stretchr/testify/assert"
+	testifyhttp "github.com/MG-RAST/golib/stretchr/testify/http"
 	"net/http"
 	"reflect"
 	"strings"
@@ -45,7 +45,7 @@ type RequestBuilderFunc func() *http.Request
 //
 //    import (
 //      // import testify
-//      testifyhttp "github.com/stretchr/testify/http"
+//      testifyhttp "github.com/MG-RAST/golib/stretchr/testify/http"
 //    )
 //
 //     // Test(t, string, func(*testing.T, *testifyhttp.TestResponseWriter))

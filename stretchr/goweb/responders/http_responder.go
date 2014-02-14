@@ -1,7 +1,7 @@
 package responders
 
 import (
-	"github.com/stretchr/goweb/context"
+	"github.com/MG-RAST/golib/stretchr/goweb/context"
 )
 
 type HTTPResponder interface {

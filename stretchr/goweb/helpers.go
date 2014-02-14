@@ -1,7 +1,7 @@
 package goweb
 
 import (
-	"github.com/stretchr/goweb/paths"
+	"github.com/MG-RAST/golib/stretchr/goweb/paths"
 	"net/http"
 )
 

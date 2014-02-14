@@ -1,13 +1,13 @@
 package responders
 
 import (
-	codecsservices "github.com/stretchr/codecs/services"
-	"github.com/stretchr/goweb/context"
-	context_test "github.com/stretchr/goweb/webcontext/test"
-	"github.com/stretchr/testify/assert"
+	codecsservices "github.com/MG-RAST/golib/stretchr/codecs/services"
+	"github.com/MG-RAST/golib/stretchr/goweb/context"
+	context_test "github.com/MG-RAST/golib/stretchr/goweb/webcontext/test"
+	"github.com/MG-RAST/golib/stretchr/testify/assert"
 	"net/url"
 	"testing"
-	"github.com/stretchr/codecs/json"
+	"github.com/MG-RAST/golib/stretchr/codecs/json"
 )
 
 func TestAPI_Interface(t *testing.T) {

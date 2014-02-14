@@ -1,7 +1,7 @@
 package numbers
 
 import (
-	"github.com/stretchr/stew/strings"
+	"github.com/MG-RAST/golib/stretchr/stew/strings"
 	"strconv"
 )
 

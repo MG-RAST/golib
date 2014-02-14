@@ -2,7 +2,7 @@ package mock
 
 import (
 	"errors"
-	"github.com/stretchr/testify/assert"
+	"github.com/MG-RAST/golib/stretchr/testify/assert"
 	"testing"
 )
 

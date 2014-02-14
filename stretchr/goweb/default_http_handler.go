@@ -1,7 +1,7 @@
 package goweb
 
 import (
-	"github.com/stretchr/goweb/handlers"
+	"github.com/MG-RAST/golib/stretchr/goweb/handlers"
 )
 
 // defaultHttpHandler is the internal placeholder for the DefaultHttpHandler.

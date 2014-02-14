@@ -5,8 +5,8 @@ import (
 	"encoding/csv"
 	"encoding/json"
 	"fmt"
-	"github.com/stretchr/codecs/constants"
-	"github.com/stretchr/objx"
+	"github.com/MG-RAST/golib/stretchr/codecs/constants"
+	"github.com/MG-RAST/golib/stretchr/objx"
 	"reflect"
 	"strings"
 )

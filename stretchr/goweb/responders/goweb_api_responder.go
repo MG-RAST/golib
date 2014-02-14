@@ -1,10 +1,10 @@
 package responders
 
 import (
-	"github.com/stretchr/codecs"
-	"github.com/stretchr/codecs/constants"
-	codecsservices "github.com/stretchr/codecs/services"
-	"github.com/stretchr/goweb/context"
+	"github.com/MG-RAST/golib/stretchr/codecs"
+	"github.com/MG-RAST/golib/stretchr/codecs/constants"
+	codecsservices "github.com/MG-RAST/golib/stretchr/codecs/services"
+	"github.com/MG-RAST/golib/stretchr/goweb/context"
 	"net/http"
 )
 

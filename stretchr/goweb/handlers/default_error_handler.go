@@ -2,7 +2,7 @@ package handlers
 
 import (
 	"fmt"
-	"github.com/stretchr/goweb/context"
+	"github.com/MG-RAST/golib/stretchr/goweb/context"
 	"net/http"
 	"os"
 	"reflect"

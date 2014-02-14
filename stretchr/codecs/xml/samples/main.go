@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/stretchr/codecs/xml"
+	"github.com/MG-RAST/golib/stretchr/codecs/xml"
 	"log"
 )
 

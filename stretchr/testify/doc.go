@@ -12,7 +12,7 @@
 package testify
 
 import (
-    _ "github.com/stretchr/testify/assert"
-    _ "github.com/stretchr/testify/http"
-    _ "github.com/stretchr/testify/mock"
+    _ "github.com/MG-RAST/golib/stretchr/testify/assert"
+    _ "github.com/MG-RAST/golib/stretchr/testify/http"
+    _ "github.com/MG-RAST/golib/stretchr/testify/mock"
 )

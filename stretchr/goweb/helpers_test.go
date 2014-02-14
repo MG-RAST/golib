@@ -1,8 +1,8 @@
 package goweb
 
 import (
-	"github.com/stretchr/testify/assert"
-	testhttp "github.com/stretchr/testify/http"
+	"github.com/MG-RAST/golib/stretchr/testify/assert"
+	testhttp "github.com/MG-RAST/golib/stretchr/testify/http"
 	"net/http"
 	"testing"
 )

@@ -2,7 +2,7 @@ package suite
 
 import (
 	"testing"
-	"github.com/stretchr/testify/assert"
+	"github.com/MG-RAST/golib/stretchr/testify/assert"
 )
 
 // This suite is intended to store values to make sure that only

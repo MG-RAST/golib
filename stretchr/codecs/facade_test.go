@@ -1,11 +1,11 @@
 package codecs
 
 import (
-	"github.com/stretchr/codecs/constants"
-	"github.com/stretchr/codecs/test"
-	"github.com/stretchr/objx"
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/mock"
+	"github.com/MG-RAST/golib/stretchr/codecs/constants"
+	"github.com/MG-RAST/golib/stretchr/codecs/test"
+	"github.com/MG-RAST/golib/stretchr/objx"
+	"github.com/MG-RAST/golib/stretchr/testify/assert"
+	"github.com/MG-RAST/golib/stretchr/testify/mock"
 	"reflect"
 	"testing"
 )

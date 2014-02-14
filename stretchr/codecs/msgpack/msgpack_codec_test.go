@@ -1,9 +1,9 @@
 package msgpack
 
 import (
-	"github.com/stretchr/codecs"
-	"github.com/stretchr/codecs/constants"
-	"github.com/stretchr/testify/assert"
+	"github.com/MG-RAST/golib/stretchr/codecs"
+	"github.com/MG-RAST/golib/stretchr/codecs/constants"
+	"github.com/MG-RAST/golib/stretchr/testify/assert"
 	"testing"
 )
 

@@ -2,8 +2,8 @@ package msgpack
 
 import (
 	"bytes"
-	"github.com/stretchr/codecs/constants"
-	"github.com/ugorji/go/codec"
+	"github.com/MG-RAST/golib/stretchr/codecs/constants"
+	"github.com/MG-RAST/golib/ugorji/go/codec"
 )
 
 // MsgpackCodec converts objects to and from Msgpack.

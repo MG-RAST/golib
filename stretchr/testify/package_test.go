@@ -1,7 +1,7 @@
 package testify
 
 import (
-	"github.com/stretchr/testify/assert"
+	"github.com/MG-RAST/golib/stretchr/testify/assert"
 	"testing"
 )
 

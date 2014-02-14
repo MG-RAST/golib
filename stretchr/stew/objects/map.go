@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/stretchr/signature"
+	"github.com/MG-RAST/golib/stretchr/signature"
 	"io/ioutil"
 	"net/url"
 	"strings"

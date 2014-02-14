@@ -1,9 +1,9 @@
 package test
 
 import (
-	"github.com/stretchr/goweb/context"
-	"github.com/stretchr/goweb/paths"
-	"github.com/stretchr/testify/mock"
+	"github.com/MG-RAST/golib/stretchr/goweb/context"
+	"github.com/MG-RAST/golib/stretchr/goweb/paths"
+	"github.com/MG-RAST/golib/stretchr/testify/mock"
 )
 
 // TestController ia a mocked (using testify/mock) objects that acts like

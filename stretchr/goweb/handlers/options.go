@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"github.com/stretchr/goweb/controllers"
-	"github.com/stretchr/goweb/http"
+	"github.com/MG-RAST/golib/stretchr/goweb/controllers"
+	"github.com/MG-RAST/golib/stretchr/goweb/http"
 )
 
 func optionsListForResourceCollection(handler *HttpHandler, controller interface{}) []string {

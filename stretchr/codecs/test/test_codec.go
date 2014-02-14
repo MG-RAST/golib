@@ -1,7 +1,7 @@
 package test
 
 import (
-	"github.com/stretchr/testify/mock"
+	"github.com/MG-RAST/golib/stretchr/testify/mock"
 )
 
 // TestCodec is a codec mock object useful for testing code

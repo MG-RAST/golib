@@ -1,7 +1,7 @@
 package paths
 
 import (
-	"github.com/stretchr/objx"
+	"github.com/MG-RAST/golib/stretchr/objx"
 )
 
 /*

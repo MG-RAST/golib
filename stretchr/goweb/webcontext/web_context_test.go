@@ -1,11 +1,11 @@
 package webcontext
 
 import (
-	codecsservices "github.com/stretchr/codecs/services"
-	"github.com/stretchr/goweb/context"
-	"github.com/stretchr/objx"
-	"github.com/stretchr/testify/assert"
-	http_test "github.com/stretchr/testify/http"
+	codecsservices "github.com/MG-RAST/golib/stretchr/codecs/services"
+	"github.com/MG-RAST/golib/stretchr/goweb/context"
+	"github.com/MG-RAST/golib/stretchr/objx"
+	"github.com/MG-RAST/golib/stretchr/testify/assert"
+	http_test "github.com/MG-RAST/golib/stretchr/testify/http"
 	"net/http"
 	"strings"
 	"testing"
