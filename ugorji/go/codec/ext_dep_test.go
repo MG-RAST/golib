@@ -20,7 +20,7 @@ import (
 	"testing"
 
 	vmsgpack "github.com/vmihailenco/msgpack"
-	"labix.org/v2/mgo/bson"
+	"github.com/MG-RAST/golib/mgo/bson"
 )
 
 func init() {

@@ -9,8 +9,8 @@ package txn
 import (
 	"encoding/binary"
 	"fmt"
-	"labix.org/v2/mgo"
-	"labix.org/v2/mgo/bson"
+	"github.com/MG-RAST/golib/mgo"
+	"github.com/MG-RAST/golib/mgo/bson"
 	"reflect"
 	"sort"
 	"sync"

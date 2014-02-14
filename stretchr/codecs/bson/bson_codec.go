@@ -2,7 +2,7 @@ package bson
 
 import (
 	"github.com/MG-RAST/golib/stretchr/codecs/constants"
-	"labix.org/v2/mgo/bson"
+	"github.com/MG-RAST/golib/mgo/bson"
 )
 
 // BsonCodec converts objects to and from BSON.

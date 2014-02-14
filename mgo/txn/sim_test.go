@@ -2,9 +2,9 @@ package txn_test
 
 import (
 	"flag"
-	"labix.org/v2/mgo"
-	"labix.org/v2/mgo/bson"
-	"labix.org/v2/mgo/txn"
+	"github.com/MG-RAST/golib/mgo"
+	"github.com/MG-RAST/golib/mgo/bson"
+	"github.com/MG-RAST/golib/mgo/txn"
 	. "launchpad.net/gocheck"
 	"math/rand"
 	"time"

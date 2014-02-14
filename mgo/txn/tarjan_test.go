@@ -2,7 +2,7 @@ package txn
 
 import (
 	"fmt"
-	"labix.org/v2/mgo/bson"
+	"github.com/MG-RAST/golib/mgo/bson"
 	. "launchpad.net/gocheck"
 )
 
