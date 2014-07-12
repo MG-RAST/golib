@@ -95,6 +95,7 @@ func (f *JsonFormatter) Format(cx *Context, input interface{}) ([]uint8, error) 
 		cx.ResponseWriter.Header().Set("Access-Control-Allow-Origin", "*")
 		cx.ResponseWriter.Header().Set("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE, OPTIONS")
 		cx.ResponseWriter.Header().Set("Access-Control-Allow-Headers", "Datatoken")
+		cx.ResponseWriter.Header().Set("Access-Control-Allow-Headers", "Authorization")
 	}
 
 	return output, nil
