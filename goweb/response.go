@@ -139,7 +139,7 @@ func (c *Context) WriteResponse(obj interface{}, statusCode int) error {
 
 	}
 
-	// write the output	
+	// write the output
 	c.ResponseWriter.Write(output)
 
 	// success - no errors

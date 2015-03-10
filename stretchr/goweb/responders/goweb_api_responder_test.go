@@ -1,13 +1,13 @@
 package responders
 
 import (
+	"github.com/MG-RAST/golib/stretchr/codecs/json"
 	codecsservices "github.com/MG-RAST/golib/stretchr/codecs/services"
 	"github.com/MG-RAST/golib/stretchr/goweb/context"
 	context_test "github.com/MG-RAST/golib/stretchr/goweb/webcontext/test"
 	"github.com/MG-RAST/golib/stretchr/testify/assert"
 	"net/url"
 	"testing"
-	"github.com/MG-RAST/golib/stretchr/codecs/json"
 )
 
 func TestAPI_Interface(t *testing.T) {
@@ -226,7 +226,7 @@ type CodecOptionsTester struct {
 
 func (c *CodecOptionsTester) Marshal(data interface{}, options map[string]interface{}) ([]byte, error) {
 	encapsulated := map[string]interface{}{
-		"data": data,
+		"data":        data,
 		"test_option": options["test_option"],
 	}
 	return c.JsonCodec.Marshal(encapsulated, nil)

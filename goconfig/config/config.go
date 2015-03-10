@@ -76,9 +76,9 @@ type tValue struct {
 // New creates an empty configuration representation.
 // This representation can be filled with AddSection and AddOption and then
 // saved to a file using WriteFile.
-// 
+//
 // === Arguments
-// 
+//
 // comment: has to be `DEFAULT_COMMENT` or `ALTERNATIVE_COMMENT`
 // separator: has to be `DEFAULT_SEPARATOR` or `ALTERNATIVE_SEPARATOR`
 // preSpace: indicate if is inserted a space before of the separator

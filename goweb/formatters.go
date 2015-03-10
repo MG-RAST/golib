@@ -5,7 +5,7 @@ import (
 	"errors"
 )
 
-// Interface describing an object responsible for 
+// Interface describing an object responsible for
 // handling transformed/formatted response data
 type Formatter interface {
 	// method to transform response
@@ -17,7 +17,7 @@ type Formatter interface {
 // Internal collection of formatters
 var formatters []Formatter
 
-// Adds a formatter decider 
+// Adds a formatter decider
 func AddFormatter(formatter Formatter) {
 	if formatters == nil {
 		formatters = make([]Formatter, 0)
@@ -89,7 +89,7 @@ func (f *JsonFormatter) Format(cx *Context, input interface{}) ([]uint8, error) 
 		output = []uint8(outputString)
 
 	} else {
-		// normal json content type 
+		// normal json content type
 		cx.ResponseWriter.Header().Set("Connection", "close")
 		cx.ResponseWriter.Header().Set("Content-Type", "application/json")
 		cx.ResponseWriter.Header().Set("Access-Control-Allow-Origin", "*")

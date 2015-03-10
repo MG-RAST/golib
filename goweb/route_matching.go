@@ -10,7 +10,7 @@ type RouteMatcherFunc func(c *Context) RouteMatcherFuncValue
 // route is a Match or NoMatch
 const DontCare RouteMatcherFuncValue = -1
 
-// Indicates that the route should NOT match 
+// Indicates that the route should NOT match
 const NoMatch RouteMatcherFuncValue = 0
 
 // Indicates that the route should match

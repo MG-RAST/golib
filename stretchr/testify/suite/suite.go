@@ -1,9 +1,9 @@
 package suite
 
 import (
-	"testing"
 	"reflect"
 	"regexp"
+	"testing"
 )
 
 // Suite is a basic testing suite with methods for storing and

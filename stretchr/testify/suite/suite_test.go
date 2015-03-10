@@ -1,8 +1,8 @@
 package suite
 
 import (
-	"testing"
 	"github.com/MG-RAST/golib/stretchr/testify/assert"
+	"testing"
 )
 
 // This suite is intended to store values to make sure that only
@@ -16,12 +16,12 @@ type SuiteTester struct {
 	Suite
 
 	// Keep counts of how many times each method is run.
-	SetupSuiteRunCount int
+	SetupSuiteRunCount    int
 	TearDownSuiteRunCount int
-	SetupTestRunCount int
-	TearDownTestRunCount int
-	TestOneRunCount int
-	TestTwoRunCount int
+	SetupTestRunCount     int
+	TearDownTestRunCount  int
+	TestOneRunCount       int
+	TestTwoRunCount       int
 	NonTestMethodRunCount int
 }
 
@@ -54,7 +54,7 @@ func (suite *SuiteTester) TearDownTest() {
 func (suite *SuiteTester) TestOne() {
 	beforeCount := suite.TestOneRunCount
 	suite.TestOneRunCount++
-	assert.Equal(suite.T(), suite.TestOneRunCount, beforeCount + 1)
+	assert.Equal(suite.T(), suite.TestOneRunCount, beforeCount+1)
 }
 
 // TestTwo is another example of a test.

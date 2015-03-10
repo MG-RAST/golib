@@ -54,7 +54,7 @@ func (handler *HttpHandler) ServeHTTP(responseWriter http.ResponseWriter, reques
 }
 
 // Searches DefaultRouteManager to find the first matching route and returns it
-// along with a boolean describing whether any routes were found or not, and the 
+// along with a boolean describing whether any routes were found or not, and the
 // Context object built while searching for routes
 func (h *HttpHandler) GetMathingRoute(responseWriter http.ResponseWriter, request *http.Request) (bool, *Route, *Context) {
 	var route *Route

@@ -22,7 +22,7 @@ func (manager *RouteManager) Map(path string, controller Controller, matcherFunc
 	// set the matcher funcs
 	route.MatcherFuncs = matcherFuncs
 
-	// add the new route to the default 
+	// add the new route to the default
 	manager.AddRoute(route)
 
 	// return the new route
@@ -41,7 +41,7 @@ func (manager *RouteManager) MapFunc(path string, contorllerFunction func(*Conte
 	// set the matcher funcs
 	route.MatcherFuncs = matcherFuncs
 
-	// add the new route to the default 
+	// add the new route to the default
 	manager.AddRoute(route)
 
 	// return the new route

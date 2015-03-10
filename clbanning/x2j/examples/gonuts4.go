@@ -35,6 +35,6 @@ func main() {
 		fmt.Println("err:", err.Error())
 	}
 	for _, v := range values {
-		fmt.Println("v:",v)
+		fmt.Println("v:", v)
 	}
 }
