@@ -24,8 +24,15 @@ func newTransport() *http.Transport {
 	return &http.Transport{TLSClientConfig: &tls.Config{InsecureSkipVerify: true}}
 }
 
+// support multiple token types with datatoken
+// backwards compatable, if no type given default to OAuth
 func GetUserByTokenAuth(token string) (user *Auth) {
-	user = &Auth{Type: "token", Token: token}
+	tmp := strings.Split(token, " ")
+	if len(tmp) > 1 {
+		user = &Auth{Type: tmp[0], Token: tmp[1]}
+	} else {
+		user = &Auth{Type: "OAuth", Token: token}
+	}
 	return
 }
 
@@ -92,7 +99,7 @@ func DoTimeout(t string, url string, header Header, data io.Reader, user *Auth, 
 		if user.Type == "basic" {
 			req.SetBasicAuth(user.Username, user.Password)
 		} else {
-			req.Header.Add("Authorization", "OAuth "+user.Token)
+			req.Header.Add("Authorization", user.Type+" "+user.Token)
 		}
 	}
 	for k, v := range header {
