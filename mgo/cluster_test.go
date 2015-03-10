@@ -28,9 +28,9 @@ package mgo_test
 
 import (
 	"fmt"
-	"io"
 	"github.com/MG-RAST/golib/mgo"
 	"github.com/MG-RAST/golib/mgo/bson"
+	"io"
 	. "launchpad.net/gocheck"
 	"net"
 	"strings"

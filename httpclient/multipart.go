@@ -23,9 +23,9 @@ type param struct {
 }
 
 type file struct {
-	n string
-	p string
-	r io.Reader
+	n    string
+	p    string
+	r    io.Reader
 	size int64
 }
 
@@ -49,8 +49,8 @@ func (f *Form) AddParam(key, val string) {
 }
 
 func (f *Form) Dump() (buf []byte) {
-    buf, _ = ioutil.ReadAll(f.Reader)
-    return
+	buf, _ = ioutil.ReadAll(f.Reader)
+	return
 }
 
 func (f *Form) Create() (err error) {
@@ -66,29 +66,29 @@ func (f *Form) Create() (err error) {
 	buf.Reset()
 
 	for _, file := range f.files {
-	    if file.p != "" {
-	        writer.CreateFormFile(file.n, filepath.Base(file.p))
-	    } else {
-	        writer.CreateFormFile(file.n, file.n)
-	    }
+		if file.p != "" {
+			writer.CreateFormFile(file.n, filepath.Base(file.p))
+		} else {
+			writer.CreateFormFile(file.n, file.n)
+		}
 		readers = append(readers, bytes.NewBufferString(buf.String()))
 		f.Length += int64(buf.Len())
 		buf.Reset()
 		if file.p == "" {
-		    f.Length += file.size
-		    readers = append(readers, file.r)
-	    } else {
-    		if fh, err := os.Open(file.p); err == nil {
-    			if fi, err := fh.Stat(); err == nil {
-    				f.Length += fi.Size()
-    				readers = append(readers, fh)
-    			} else {
-    				return err
-    			}
-    		} else {
-    			return err
-    		}
-    	}
+			f.Length += file.size
+			readers = append(readers, file.r)
+		} else {
+			if fh, err := os.Open(file.p); err == nil {
+				if fi, err := fh.Stat(); err == nil {
+					f.Length += fi.Size()
+					readers = append(readers, fh)
+				} else {
+					return err
+				}
+			} else {
+				return err
+			}
+		}
 	}
 
 	writer.Close()

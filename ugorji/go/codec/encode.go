@@ -385,7 +385,7 @@ func (f *encFnInfo) kSlice(rv reflect.Value) {
 		f.ee.encodeStringBytes(c_RAW, rv.Bytes())
 		return
 	}
-	
+
 	l := rv.Len()
 	if f.ti.mbs {
 		if l%2 == 1 {
@@ -410,7 +410,7 @@ func (f *encFnInfo) kArray(rv reflect.Value) {
 	// So we have to duplicate the functionality here.
 	// f.e.encodeValue(rv.Slice(0, rv.Len()))
 	// f.kSlice(rv.Slice(0, rv.Len()))
-	
+
 	l := rv.Len()
 	// Handle an array of bytes specially (in line with what is done for slices)
 	if f.ti.rt.Elem().Kind() == reflect.Uint8 {
@@ -418,7 +418,7 @@ func (f *encFnInfo) kArray(rv reflect.Value) {
 			f.ee.encodeStringBytes(c_RAW, nil)
 			return
 		}
-		var bs []byte 
+		var bs []byte
 		if rv.CanAddr() {
 			bs = rv.Slice(0, l).Bytes()
 		} else {
@@ -430,7 +430,7 @@ func (f *encFnInfo) kArray(rv reflect.Value) {
 		f.ee.encodeStringBytes(c_RAW, bs)
 		return
 	}
-	
+
 	if f.ti.mbs {
 		if l%2 == 1 {
 			encErr("mapBySlice: invalid length (must be divisible by 2): %v", l)

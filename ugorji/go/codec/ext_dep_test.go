@@ -19,8 +19,8 @@ package codec
 import (
 	"testing"
 
-	vmsgpack "github.com/vmihailenco/msgpack"
 	"github.com/MG-RAST/golib/mgo/bson"
+	vmsgpack "github.com/vmihailenco/msgpack"
 )
 
 func init() {

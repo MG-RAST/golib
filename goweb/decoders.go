@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-// types that impliment RequestDecoder can unmarshal 
+// types that impliment RequestDecoder can unmarshal
 // the request body into an apropriate type/struct
 type RequestDecoder interface {
 	Unmarshal(cx *Context, v interface{}) error
@@ -18,7 +18,7 @@ type RequestDecoder interface {
 type JsonRequestDecoder struct{}
 
 func (d *JsonRequestDecoder) Unmarshal(cx *Context, v interface{}) error {
-	// read body 
+	// read body
 	data, err := ioutil.ReadAll(cx.Request.Body)
 	if err != nil {
 		return err
@@ -31,14 +31,14 @@ type XmlRequestDecoder struct{}
 
 func (d *XmlRequestDecoder) Unmarshal(cx *Context, v interface{}) error {
 	// read body
-	// data, err := ioutil.ReadAll(cx.Request.Body) 
+	// data, err := ioutil.ReadAll(cx.Request.Body)
 	_, err := ioutil.ReadAll(cx.Request.Body)
 	if err != nil {
 		return err
 	}
 
 	/*
-		BROKEN: type mismatch between buf (type *strings.Reader) and []byte... punting 
+		BROKEN: type mismatch between buf (type *strings.Reader) and []byte... punting
 
 		buf := strings.NewReader(string(data))
 		return xml.Unmarshal(buf, v)
@@ -64,7 +64,7 @@ var decoders map[string]RequestDecoder = map[string]RequestDecoder{
 }
 
 // goweb.Context Helper function to fill a variable with the contents
-// of the request body. The body will be decoded based 
+// of the request body. The body will be decoded based
 // on the content-type and an apropriate RequestDecoder
 // automatically selected
 func (cx *Context) Fill(v interface{}) error {

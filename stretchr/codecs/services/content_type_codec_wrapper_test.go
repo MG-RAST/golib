@@ -39,7 +39,7 @@ func TestWrapCodec_Marshal(t *testing.T) {
 
 	response, err := wrappedCodec.Marshal(nil, nil)
 	assert.NoError(t, err)
-	expectedResponse := `{"matched_type":"`+testContentType+`"}`
+	expectedResponse := `{"matched_type":"` + testContentType + `"}`
 	assert.Equal(t, response, []byte(expectedResponse),
 		"The wrapped codec should add the matched content type to options on unmarshal")
 }

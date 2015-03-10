@@ -117,7 +117,7 @@ func main() {
 						// print out the keys
 						var gotFirstKey bool
 						// for kk, _ := range valueEntry {
-						for i := 0 ; i < lv ; i++ {
+						for i := 0; i < lv; i++ {
 							if gotFirstKey {
 								mf.WriteString(",")
 							} else {

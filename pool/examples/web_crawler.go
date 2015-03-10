@@ -17,7 +17,7 @@ type Fetcher interface {
 type crawlResult struct {
 	body string
 	urls []string
-	err error
+	err  error
 }
 
 // work uses fetcher to recursively crawl
