@@ -10,7 +10,6 @@ import (
 	"net/http"
 	"strings"
 	"time"
-	"strings"
 )
 
 type Header http.Header
