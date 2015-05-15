@@ -43,7 +43,7 @@ func GetUserByBasicAuth(username, password string) (user *Auth) {
 }
 
 func Do(t string, url string, header Header, data io.Reader, user *Auth) (*http.Response, error) {
-	return DoTimeout(t, url, header, data, user, time.Second*600) // TODO decrease to 60 seconds if SHOCK issue withchunks is solved
+	return DoTimeout(t, url, header, data, user, time.Second*0) // TODO decrease to 60 seconds if SHOCK issue withchunks is solved
 }
 
 func Get(url string, header Header, data io.Reader, user *Auth) (resp *http.Response, err error) {
